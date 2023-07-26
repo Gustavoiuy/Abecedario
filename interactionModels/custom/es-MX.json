@@ -1,0 +1,818 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "mostrarabcIntent",
+          "samples": [
+            "mostrar abecedario",
+            "iniciar",
+            "mostrar"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "mostrarmasIntent",
+          "samples": [
+            "mostrar mas letras",
+            "mas",
+            "mostrar mas"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "volverIntent",
+          "samples": [
+            "inicio",
+            "volver"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "NombreIntent",
+          "samples": [
+            "mi nombre es {nombre}",
+            "soy {nombre}",
+            "{nombre}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "salirIntent",
+          "samples": [
+            "salir",
+            "adios",
+            "hasta luego",
+            "cerrar"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "letras",
+              "type": "LETRAS"
+            }
+          ],
+          "name": "MuestrameLetraIntent",
+          "samples": [
+            "muestrame la letra {letras}",
+            "palabras con la letra {letras}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "JuegoAbecedarioIntent",
+          "samples": [
+            "iniciar juego",
+            "comenzar juego",
+            "siguiente",
+            "jugar"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "respuesta",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "RespuestaJuegoAbecedarioIntent",
+          "samples": [
+            "palabra {respuesta}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "saliEsIntent",
+          "samples": [
+            "close",
+            "quit",
+            "bye",
+            "good bye"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "show",
+          "samples": [
+            "begin",
+            "start",
+            "show alphabet",
+            "show"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "z"
+              }
+            },
+            {
+              "name": {
+                "value": "y"
+              }
+            },
+            {
+              "name": {
+                "value": "x"
+              }
+            },
+            {
+              "name": {
+                "value": "w"
+              }
+            },
+            {
+              "name": {
+                "value": "v"
+              }
+            },
+            {
+              "name": {
+                "value": "u"
+              }
+            },
+            {
+              "name": {
+                "value": "t"
+              }
+            },
+            {
+              "name": {
+                "value": "s"
+              }
+            },
+            {
+              "name": {
+                "value": "r"
+              }
+            },
+            {
+              "name": {
+                "value": "q"
+              }
+            },
+            {
+              "name": {
+                "value": "p"
+              }
+            },
+            {
+              "name": {
+                "value": "o"
+              }
+            },
+            {
+              "name": {
+                "value": "ñ"
+              }
+            },
+            {
+              "name": {
+                "value": "n"
+              }
+            },
+            {
+              "name": {
+                "value": "m"
+              }
+            },
+            {
+              "name": {
+                "value": "l"
+              }
+            },
+            {
+              "name": {
+                "value": "k"
+              }
+            },
+            {
+              "name": {
+                "value": "j"
+              }
+            },
+            {
+              "name": {
+                "value": "i"
+              }
+            },
+            {
+              "name": {
+                "value": "h"
+              }
+            },
+            {
+              "name": {
+                "value": "g"
+              }
+            },
+            {
+              "name": {
+                "value": "f"
+              }
+            },
+            {
+              "name": {
+                "value": "e"
+              }
+            },
+            {
+              "name": {
+                "value": "d"
+              }
+            },
+            {
+              "name": {
+                "value": "c"
+              }
+            },
+            {
+              "name": {
+                "value": "b"
+              }
+            },
+            {
+              "name": {
+                "value": "a"
+              }
+            }
+          ],
+          "name": "LETRAS"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "avión"
+              }
+            },
+            {
+              "name": {
+                "value": "aguacate"
+              }
+            },
+            {
+              "name": {
+                "value": "anillo"
+              }
+            },
+            {
+              "name": {
+                "value": "árbol"
+              }
+            },
+            {
+              "name": {
+                "value": "balón"
+              }
+            },
+            {
+              "name": {
+                "value": "barco"
+              }
+            },
+            {
+              "name": {
+                "value": "bota"
+              }
+            },
+            {
+              "name": {
+                "value": "bufanda"
+              }
+            },
+            {
+              "name": {
+                "value": "casa"
+              }
+            },
+            {
+              "name": {
+                "value": "carro"
+              }
+            },
+            {
+              "name": {
+                "value": "camisa"
+              }
+            },
+            {
+              "name": {
+                "value": "café"
+              }
+            },
+            {
+              "name": {
+                "value": "dado"
+              }
+            },
+            {
+              "name": {
+                "value": "delfín"
+              }
+            },
+            {
+              "name": {
+                "value": "diente"
+              }
+            },
+            {
+              "name": {
+                "value": "dedo"
+              }
+            },
+            {
+              "name": {
+                "value": "elefante"
+              }
+            },
+            {
+              "name": {
+                "value": "escuela"
+              }
+            },
+            {
+              "name": {
+                "value": "estrella"
+              }
+            },
+            {
+              "name": {
+                "value": "elección"
+              }
+            },
+            {
+              "name": {
+                "value": "flor"
+              }
+            },
+            {
+              "name": {
+                "value": "foca"
+              }
+            },
+            {
+              "name": {
+                "value": "fuego"
+              }
+            },
+            {
+              "name": {
+                "value": "fresa"
+              }
+            },
+            {
+              "name": {
+                "value": "gato"
+              }
+            },
+            {
+              "name": {
+                "value": "guitarra"
+              }
+            },
+            {
+              "name": {
+                "value": "gorra"
+              }
+            },
+            {
+              "name": {
+                "value": "galleta"
+              }
+            },
+            {
+              "name": {
+                "value": "hormiga"
+              }
+            },
+            {
+              "name": {
+                "value": "helado"
+              }
+            },
+            {
+              "name": {
+                "value": "huevo"
+              }
+            },
+            {
+              "name": {
+                "value": "hierro"
+              }
+            },
+            {
+              "name": {
+                "value": "iglesia"
+              }
+            },
+            {
+              "name": {
+                "value": "isla"
+              }
+            },
+            {
+              "name": {
+                "value": "iglú"
+              }
+            },
+            {
+              "name": {
+                "value": "imán"
+              }
+            },
+            {
+              "name": {
+                "value": "jirafa"
+              }
+            },
+            {
+              "name": {
+                "value": "jugo"
+              }
+            },
+            {
+              "name": {
+                "value": "juguete"
+              }
+            },
+            {
+              "name": {
+                "value": "jardín"
+              }
+            },
+            {
+              "name": {
+                "value": "koala"
+              }
+            },
+            {
+              "name": {
+                "value": "karate"
+              }
+            },
+            {
+              "name": {
+                "value": "kiwi"
+              }
+            },
+            {
+              "name": {
+                "value": "kilo"
+              }
+            },
+            {
+              "name": {
+                "value": "luna"
+              }
+            },
+            {
+              "name": {
+                "value": "león"
+              }
+            },
+            {
+              "name": {
+                "value": "lápiz"
+              }
+            },
+            {
+              "name": {
+                "value": "libro"
+              }
+            },
+            {
+              "name": {
+                "value": "manzana"
+              }
+            },
+            {
+              "name": {
+                "value": "mono"
+              }
+            },
+            {
+              "name": {
+                "value": "moto"
+              }
+            },
+            {
+              "name": {
+                "value": "mar"
+              }
+            },
+            {
+              "name": {
+                "value": "naranja"
+              }
+            },
+            {
+              "name": {
+                "value": "nido"
+              }
+            },
+            {
+              "name": {
+                "value": "nube"
+              }
+            },
+            {
+              "name": {
+                "value": "nieve"
+              }
+            },
+            {
+              "name": {
+                "value": "oso"
+              }
+            },
+            {
+              "name": {
+                "value": "oveja"
+              }
+            },
+            {
+              "name": {
+                "value": "oso polar"
+              }
+            },
+            {
+              "name": {
+                "value": "ojo"
+              }
+            },
+            {
+              "name": {
+                "value": "perro"
+              }
+            },
+            {
+              "name": {
+                "value": "pelota"
+              }
+            },
+            {
+              "name": {
+                "value": "paraguas"
+              }
+            },
+            {
+              "name": {
+                "value": "payaso"
+              }
+            },
+            {
+              "name": {
+                "value": "queso"
+              }
+            },
+            {
+              "name": {
+                "value": "quesadilla"
+              }
+            },
+            {
+              "name": {
+                "value": "quena"
+              }
+            },
+            {
+              "name": {
+                "value": "quiosco"
+              }
+            },
+            {
+              "name": {
+                "value": "ratón"
+              }
+            },
+            {
+              "name": {
+                "value": "radio"
+              }
+            },
+            {
+              "name": {
+                "value": "rojo"
+              }
+            },
+            {
+              "name": {
+                "value": "rana"
+              }
+            },
+            {
+              "name": {
+                "value": "sol"
+              }
+            },
+            {
+              "name": {
+                "value": "serpiente"
+              }
+            },
+            {
+              "name": {
+                "value": "sombrero"
+              }
+            },
+            {
+              "name": {
+                "value": "silla"
+              }
+            },
+            {
+              "name": {
+                "value": "tigre"
+              }
+            },
+            {
+              "name": {
+                "value": "tren"
+              }
+            },
+            {
+              "name": {
+                "value": "tortuga"
+              }
+            },
+            {
+              "name": {
+                "value": "tarjeta"
+              }
+            },
+            {
+              "name": {
+                "value": "uvas"
+              }
+            },
+            {
+              "name": {
+                "value": "unicornio"
+              }
+            },
+            {
+              "name": {
+                "value": "uniforme"
+              }
+            },
+            {
+              "name": {
+                "value": "uña"
+              }
+            },
+            {
+              "name": {
+                "value": "vaca"
+              }
+            },
+            {
+              "name": {
+                "value": "volcán"
+              }
+            },
+            {
+              "name": {
+                "value": "vela"
+              }
+            },
+            {
+              "name": {
+                "value": "vestido"
+              }
+            },
+            {
+              "name": {
+                "value": "walrus"
+              }
+            },
+            {
+              "name": {
+                "value": "waffle"
+              }
+            },
+            {
+              "name": {
+                "value": "whisky"
+              }
+            },
+            {
+              "name": {
+                "value": "wifi"
+              }
+            },
+            {
+              "name": {
+                "value": "xilófono"
+              }
+            },
+            {
+              "name": {
+                "value": "xenofobia"
+              }
+            },
+            {
+              "name": {
+                "value": "xerografía"
+              }
+            },
+            {
+              "name": {
+                "value": "xenón"
+              }
+            },
+            {
+              "name": {
+                "value": "yate"
+              }
+            },
+            {
+              "name": {
+                "value": "yogur"
+              }
+            },
+            {
+              "name": {
+                "value": "yema"
+              }
+            },
+            {
+              "name": {
+                "value": "yoyo"
+              }
+            },
+            {
+              "name": {
+                "value": "zapato"
+              }
+            },
+            {
+              "name": {
+                "value": "zanahoria"
+              }
+            },
+            {
+              "name": {
+                "value": "zorro"
+              }
+            },
+            {
+              "name": {
+                "value": "zumbido"
+              }
+            }
+          ],
+          "name": "PALABRAS"
+        }
+      ],
+      "invocationName": "practica individual"
+    }
+  }
+}

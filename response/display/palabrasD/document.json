@@ -1,0 +1,1 @@
+{"type":"APL","version":"1.6","mainTemplate":{"items":[{"type":"Text","text":"Letras disponibles:"},{"type":"Text","text":"${datasources.letrasData.letras.join(', ')}"},{"type":"Text","text":"Palabras que comienzan con la letra ${datasources.letraData.letra}:"},{"type":"Text","text":"${datasources.letraData.palabras.join(', ')}"}]}}

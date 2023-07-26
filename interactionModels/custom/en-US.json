@@ -1,0 +1,262 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "mostrarabcIntent",
+          "samples": [
+            "show alphabet",
+            "strat",
+            "show"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "mostrarmasIntent",
+          "samples": [
+            "show more letters",
+            "plus",
+            "show more"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "volverIntent",
+          "samples": [
+            "star",
+            "return"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "nombre",
+              "type": "AMAZON.FirstName"
+            }
+          ],
+          "name": "NombreIntent",
+          "samples": [
+            "my name is {nombre}",
+            "i am {nombre}",
+            "{nombre}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "salirIntent",
+          "samples": [
+            "quit",
+            "close",
+            "good bye",
+            "bye",
+            "see you later"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "letras",
+              "type": "LETRAS"
+            }
+          ],
+          "name": "MuestrameLetraIntent",
+          "samples": [
+            "show me the lyrics {letras}",
+            "words with the letter {letras}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "show",
+          "samples": [
+            "begin",
+            "start",
+            "show alphabet",
+            "show"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "z"
+              }
+            },
+            {
+              "name": {
+                "value": "y"
+              }
+            },
+            {
+              "name": {
+                "value": "x"
+              }
+            },
+            {
+              "name": {
+                "value": "w"
+              }
+            },
+            {
+              "name": {
+                "value": "v"
+              }
+            },
+            {
+              "name": {
+                "value": "u"
+              }
+            },
+            {
+              "name": {
+                "value": "t"
+              }
+            },
+            {
+              "name": {
+                "value": "s"
+              }
+            },
+            {
+              "name": {
+                "value": "r"
+              }
+            },
+            {
+              "name": {
+                "value": "q"
+              }
+            },
+            {
+              "name": {
+                "value": "p"
+              }
+            },
+            {
+              "name": {
+                "value": "o"
+              }
+            },
+            {
+              "name": {
+                "value": "ñ"
+              }
+            },
+            {
+              "name": {
+                "value": "n"
+              }
+            },
+            {
+              "name": {
+                "value": "m"
+              }
+            },
+            {
+              "name": {
+                "value": "l"
+              }
+            },
+            {
+              "name": {
+                "value": "k"
+              }
+            },
+            {
+              "name": {
+                "value": "j"
+              }
+            },
+            {
+              "name": {
+                "value": "i"
+              }
+            },
+            {
+              "name": {
+                "value": "h"
+              }
+            },
+            {
+              "name": {
+                "value": "g"
+              }
+            },
+            {
+              "name": {
+                "value": "f"
+              }
+            },
+            {
+              "name": {
+                "value": "e"
+              }
+            },
+            {
+              "name": {
+                "value": "d"
+              }
+            },
+            {
+              "name": {
+                "value": "c"
+              }
+            },
+            {
+              "name": {
+                "value": "b"
+              }
+            },
+            {
+              "name": {
+                "value": "a"
+              }
+            }
+          ],
+          "name": "LETRAS"
+        }
+      ],
+      "invocationName": "individual practice"
+    }
+  }
+}
